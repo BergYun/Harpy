@@ -254,14 +254,10 @@ typedef void (^HarpyActionBlockTpye)(void);
 - (UIAlertView *)createAlertView
 {
     
-//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:_updateAvailableMessage message:_theNewVersionMessage delegate:self cancelButtonTitle:@"更新0" otherButtonTitles: nil];
     UIAlertView *alertView = [[UIAlertView alloc] init];
     alertView.delegate = self;
     alertView.title = _updateAvailableMessage;
     alertView.message = _theNewVersionMessage;
-//    [alertView addButtonWithTitle:@"更新0"];
-//    [alertView addButtonWithTitle:@"hahah1"];
-//    [alertView addButtonWithTitle:@"hahah2"];
     
     if (_alertControllerTintColor) {
         [alertView setTintColor:_alertControllerTintColor];
