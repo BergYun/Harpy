@@ -253,18 +253,15 @@ typedef void (^HarpyActionBlockTpye)(void);
 }
 - (UIAlertView *)createAlertView
 {
-    
-//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:_updateAvailableMessage message:_theNewVersionMessage delegate:self cancelButtonTitle:@"更新0" otherButtonTitles: nil];
     UIAlertView *alertView = [[UIAlertView alloc] init];
     alertView.delegate = self;
     alertView.title = _updateAvailableMessage;
     alertView.message = _theNewVersionMessage;
-//    [alertView addButtonWithTitle:@"更新0"];
-//    [alertView addButtonWithTitle:@"hahah1"];
-//    [alertView addButtonWithTitle:@"hahah2"];
     
     if (_alertControllerTintColor) {
         [alertView setTintColor:_alertControllerTintColor];
+        [alertView setBackgroundColor:_alertControllerTintColor];
+        [alertView setTintAdjustmentMode:UIViewTintAdjustmentModeDimmed];
     }
     
     return alertView;
@@ -432,6 +429,12 @@ typedef void (^HarpyActionBlockTpye)(void);
         block();
     }
 }
+- (void)willPresentAlertView:(UIAlertView *)alertView
+{
+    if (_alertControllerTintColor) {
+        [self setAlertView:alertView TinColor:_alertControllerTintColor];
+    }
+}
 
 #pragma mark - UIAlertViewActions(<iOS8)
 - (void)configAlertView:(UIAlertView *)alertView Title:(NSString *) title Action:(void (^)())actionBlock {
@@ -497,6 +500,21 @@ typedef void (^HarpyActionBlockTpye)(void);
                                                             }];
     
     return skipAlertAction;
+}
+
+- (void)setAlertView:(UIAlertView *)alertView TinColor:(UIColor *)color {
+    for (UIView *subview in alertView.subviews) {
+        NSLog(@"===-----%@", NSStringFromClass([subview class]));
+        if ([subview isKindOfClass:[UIControl class]]) {
+            UILabel *lable = (UILabel *)subview;
+            if (
+                [lable.text isEqualToString:_updateButtonText]||
+                [lable.text isEqualToString:_skipButtonText]||
+                [lable.text isEqualToString:_nextTimeButtonText]) {
+                lable.tintColor = color;
+            }
+        }
+    }
 }
 
 - (NSMutableDictionary *)alertViewActions
