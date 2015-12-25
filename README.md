@@ -1,3 +1,5 @@
+**中文版：**
+
 # Harpy(iOS5-9适配版本,基于[ArtSabintsev/Harpy v3.4.5](https://github.com/ArtSabintsev/Harpy))
 
 ### 提醒用户你的应用有新的可用版本，并且及时的跳转到App Store进行更新。
@@ -5,7 +7,7 @@
 ## 关于
 **Harpy** 将用户手机上已安装的iOS app版本与当前App Store最新可用版本进行检查对比。如果有新的可用版本时，使用弹窗及时提醒用户最新版本信息，并然用户选择是否需要进一步操作。
 
-Harry是、基于[http://www.semver.org](Semantic Versioning)版本号系统标准执行。
+Harry是基于[http://www.semver.org](Semantic Versioning)版本号系统标准执行。
 - `Semantic Versioning`是一个三位数的版本号系统（例如:1.0.0）
 - Harry同样支持2位数的版本号(例如:1.0)
 - Harpy同时支持4位数的版本号（例如:1.0.0.0）
@@ -162,6 +164,8 @@ Harpy 已经本地化了的语言包括 Arabic, Basque, 简体中文, 繁体中�
 
 ## 在App Store上提交的重要注意事项
 App Store 审核人员将不会看到升级弹框
+
+**English**：
 
 # Harpy（Compatible version Base On [ArtSabintsev/Harpy v3.4.5](https://github.com/ArtSabintsev/Harpy)）
 ### Notify users when a new version of your app is available, and prompt them with the App Store link.
