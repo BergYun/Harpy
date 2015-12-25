@@ -30,9 +30,9 @@ Harry是基于[http://www.semver.org](Semantic Versioning)版本号系统标准�
 - **右图：**提供跳过当前版本更新的选项
 - 这些样式全部可以通过`HarpyAletType`枚举进行控制，详见`Harpy.h`
 
-![Forced Update](https://github.com/ArtSabintsev/Harpy/blob/master/samplePictures/picForcedUpdate.png?raw=true "Forced Update")
-![Optional Update](https://github.com/ArtSabintsev/Harpy/blob/master/samplePictures/picOptionalUpdate.png?raw=true "Optional Update")
-![Skipped Update](https://github.com/ArtSabintsev/Harpy/blob/master/samplePictures/picSkippedUpdate.png?raw=true "Optional Update")
+![Forced Update](https://github.com/yangchao0033/Harpy/blob/master/samplePictures/4.pic.jpg?raw=true "Forced Update")
+![Optional Update](https://github.com/yangchao0033/Harpy/blob/master/samplePictures/5.pic.jpg?raw=true "Optional Update")
+![Skipped Update](https://github.com/yangchao0033/Harpy/blob/master/samplePictures/3.pic.jpg?raw=true "Optional Update")
 
 ## 安装
 
