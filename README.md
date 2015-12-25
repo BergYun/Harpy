@@ -1,6 +1,8 @@
 **中文版：**
 
-# Harpy(iOS5-9适配版本,基于[ArtSabintsev/Harpy v3.4.5](https://github.com/ArtSabintsev/Harpy))
+# Harpy（兼容版）
+
+###(iOS5-9适配版本,基于[ArtSabintsev/Harpy v3.4.5](https://github.com/ArtSabintsev/Harpy))
 
 ### 提醒用户你的应用有新的可用版本，并且及时的跳转到App Store进行更新。
 
